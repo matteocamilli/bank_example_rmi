@@ -10,18 +10,18 @@ public class AccountManagerImpl extends
 
     private Dictionary _accounts = new Hashtable();
     private String hostName;
-    private Vector factoryList;
+    private Vector <AccountFactory> factoryList;
 
     public AccountManagerImpl(String _hostName) throws RemoteException {
         hostName = _hostName;
-        factoryList = new Vector();
+        factoryList = new Vector<AccountFactory>();
     }
 
     public void addFactory(String hostName) {
         try {
             AccountFactory fct = (AccountFactory)
                     Naming.lookup("//" + hostName + "/AccountFactory");
-            factoryList.addElement(fct);
+            factoryList.add(fct);
         } catch (Exception e) {
             System.out.println("Error: Factory unreachable");
             e.printStackTrace();
