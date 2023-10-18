@@ -8,14 +8,14 @@ This class diagrams shows the classes and the interfaces that compose the code a
 
 This component diagram shows the components that should be instantiated and connected and are visible at runtime. From here we can infer that the two remote objects Account and AccountFactory belong to the same component that is exposing both their remote interfaces.
 
-<img width="440" alt="image" src="https://github.com/matteocamilli/bank_example_rmi/tree/main/figures/componentDiagram.jpg">
+<img width="440" alt="image" src="./figures/componentDiagram.jpg">
 
 The following sequence diagram is providing an overview of the runtime behavior of our components:
 
-<img width="782" alt="image" src="https://github.com/matteocamilli/bank_example_rmi/tree/main/figures/sequenceDiagram.jpg">
+<img width="782" alt="image" src="./figures/sequenceDiagram.jpg">
 
 Finally, the following deployment diagram maps each component on some concrete resources (desktop machines and generic nodes that can be, for instance, phisical servers or virtual machines). This diagram highlights also that the intermediate component, the Bank, can rely on multiple Factories.
 
-<img width="546" alt="image" src="https://github.com/matteocamilli/bank_example_rmi/tree/main/figures/componentDiagram.jpg">
+<img width="546" alt="image" src="./figures/componentDiagram.jpg">
 
 The information conveyed by the diagrams can be derived directly from the code... but can't we understand this system better from the diagrams than from the actual implementation?   
