@@ -4,7 +4,7 @@ Account, AccountFactory and AccountManager instances are all remote objects that
 
 The following UML diagrams provide a description of the code from multiple perspectives.
 This class diagrams shows the classes and the interfaces that compose the code and the relationships that can be inferred from the code itself.
-<img width="531" alt="image" src="https://github.com/matteocamilli/bank_example_rmi/tree/main/figures/classDiagram.jpg">
+<img width="531" alt="image" src="./figures/classDiagram.jpg">
 
 This component diagram shows the components that should be instantiated and connected and are visible at runtime. From here we can infer that the two remote objects Account and AccountFactory belong to the same component that is exposing both their remote interfaces.
 
